@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire TP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800" rel="stylesheet">
+  </head>
+  <body>
+
+    <h1>INSCRIPTION</h1>
+    <p>Formulaire d'inscription</p>
+
+    <section class="container">
+      <form class="custom-form" action="#" method="post">
+        <fieldset> <!-- permet de faire des regroupement -->
+          <legend>Votre identité</legend>
+          <p>
+            <label for="firstName">Prénom : <sup>*</sup> </label>
+            <input type="text" name="firstName" placeholder="Ex : Marie" required>
+          </p>
+          <p>
+            <label for="lastName">Nom : <sup>*</sup></label>
+            <input type="text" name="lastName" id="lastName" placeholder="Ex : Babino" required>
+          </p>
+
+          <p>
+            <label for="email">Adresse mail : <sup>*</sup></label>
+            <input type="mail" name="" id="email" placeholder="adresse@exemple.com" required>
+          </p>
+
+          <p>
+            <label for="birthDate">Date de naissance : <sup>*</sup></label>
+            <input type="date" name="birthDate" id="birthDate" required>
+          </p>
+
+          <p>
+            <label for="sex">Votre sexe :<sup>*</sup></label>
+            <select name="sexe">
+              <option value="choice" disabled>Choisir le sexe</option>
+              <option value="male">Homme</option>
+              <option value="female">Femme</option>
+              <option value="other">Non binaire</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Votre compte</legend>
+          <p>
+            <label for="pseudo">Votre pseudo : <sup>*</sup></label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Marino49" required>
+          </p>
+
+          <p>
+            <label for="password">Votre mot de passe : <sup>*</sup></label>
+            <input type="password" name="password" id="password" placeholder="Mot de passe" required>
+          </p>
+
+          <p>
+            <label for="presentation">Présentez-vous :</label><br>
+            <textarea name="presentation" id="presentation" placeholder="Bonjour je m'appelle Marie, je viens d'Italie !..." rows="10" cols="30"></textarea>
+          </p>
+
+          <p>
+            Je souhaite être contacté par :<sup>*</sup><br>
+            <input type="radio" name="contact" id="female">
+            <label for="female">Des femmes</label><br>
+            <input type="radio" name="contact" id="male">
+            <label for="male">Des hommes</label><br>
+            <input type="radio" name="contact" id="both">
+            <label for="both">Les deux</label><br>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" name="conditions" id="conditions" required>
+          <label for="conditions">J'ai lu et j'accepte les <a href="#">Conditions d'utilisation</a> (on sait tous que c'est pas vrai :D) <sup>*</sup> </label>
+        </p>
+
+        <p>
+          <input type="checkbox" name="newsletter" id="newsletter">
+          <label for="newsletter">Je m'abonne à la newsletter et j'accepte de reçevoir des mails de vos partenaires !</label>
+        </p>
+
+        <p>
+          <input type="submit" name="envoyer" value="Envoyer">
+        </p>
+      </form>
+    </section>
+  </body>
+</html>
